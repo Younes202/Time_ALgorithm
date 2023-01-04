@@ -30,7 +30,7 @@ class Main {
     }while(testh!=true);
             h_int=foecnumeric(h_str);
 
-    }while(h_int>24);
+    }while(h_int>24 || h_int<0);
          // Gestion d'exception concernant la munite {1- no Stirng no value > 60}
 
     do{
@@ -42,7 +42,7 @@ class Main {
     }while(testm!=true);
             m_int=foecnumeric(m_str);
 
-    }while(m_int>60);
+    }while(m_int>60 || h_int<0);
    
        // Gestion d'exception concernant la seconde {1- no Stirng no value > 60}
 
@@ -56,7 +56,7 @@ class Main {
     }while(testm!=true);
             sec_int=foecnumeric(sec_str);
 
-    }while(sec_int>60);
+    }while(sec_int>60 || h_int<0);
            // Incrémenter avec 1 seconde 
 
       sec_int++;
